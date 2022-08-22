@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0%;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'nav main aside';
+            grid-template-columns: 35% 50% 15%;
+            grid-template-rows: 15% 85% ;
+            text-align: left;
+            max-width: 98vw;
+            max-height: 98vh;
+            gap: 12px;
+        }
+        #header {
+            grid-area: header;
+            background-color: skyblue;
+        }
+        #nav {
+            grid-area: nav;
+            background-color: green;
+        }
+        #main {
+            grid-area: main;
+            background-color: red;
+        }
+        #aside {
+            grid-area: aside;
+            background-color: yellow;
+        }
+
+        @media (min-width: 900px) {
+           body {
+              display: grid;
+              grid-template-areas: 
+              'header header header'
+              'nav main aside';
+              grid-template-columns: 35% 50% 15%;
+              grid-template-rows: 15% 85% ;
+              text-align: left;
+              max-width: 98vw;
+              max-height: 98vh;
+              gap: 12px;
+            }
+        }
+    
+
+        @media (max-width:899px) {
+            body {
+              display: grid;
+              grid-template-areas: 
+              'header header'
+              'nav nav'
+              'main aside';
+              grid-template-columns: 55% 45% ;
+              grid-template-rows: 15% 25% 55% ;
+              text-align: left;
+              max-width: 98vw;
+              max-height: 98vh;
+              gap: 12px;
+            }
+        }
+
+        @media (max-width:599px) {
+            body {
+              display: grid;
+              grid-template-areas: 
+              'header'
+              'nav'
+              'main'
+              'aside';
+              grid-template-columns: 1fr;
+              grid-template-rows: 15% 25% 20% 40%  ;
+              text-align: left;
+              max-width: 98vw;
+              max-height: 98vh;
+              gap: 12px;
+            }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<header id="header">Header</header>
+<nav id="nav">Nav</nav>
+<main id="main">Main</main>
+<aside id="aside">Aside</aside>
+    
+</body>
+
+</html>

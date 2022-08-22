@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+       /*
+       console.log("ej----------------1")
+       let j1 = 1
+        let num =parseInt(11)
+        
+        for (let j1=1; j1<=25 ;j1++) {
+            
+            console.log(j1 * num)
+        }
+    */
+/*
+  console.log("ej----------------2")
+    let num = 1
+    for (let num = 1; num<=500 ; num++) {
+        if(num %8 == 0)
+        console.log(num)
+    }
+    */
+
+    /*
+    let mayores7 = 0
+    let menores7 = 0
+
+    for (let i = 0; i <= 10 ; i++) {
+        let notas=prompt("ingrese su nota")
+        notas = parseInt(notas)
+        if(notas<7){
+            menores7++
+        }else{
+            mayores7++
+        }
+    } 
+    console.log("cantidad de menores a siete "+ menores7)  
+    console.log("cantidad de mayores a siete "+ mayores7)
+    */
+
+    /*
+ console.log("ej------------4")
+
+  let suma = 0
+  
+  for (let i = 0; i <5; i++) {
+    let altura = prompt("ingrese su altura en cm")
+    altura = parseInt(altura)
+    suma = suma + altura
+    }
+    console.log(suma/5);
+    */
+
+    /*
+    console.log("ej------------5")
+
+    let men300 = 0
+    let may300 = 0
+    let importeAPagar = 0
+
+    for (let i = 0; i<5; i++) {
+        let sueldo = prompt("ingrese el valor de su sueldo")
+        sueldo = parseInt(sueldo)
+        importeAPagar += sueldo;
+        if(sueldo<=300){
+            men300++
+        }
+        else if(sueldo>300){
+            may300++
+        }
+    }
+    console.log(men300+" empleados cobran menos o igual de $300")
+    console.log(may300+" empleados cobran mas de $300")
+    console.log("La empresa gasta $"+importeAPagar+" mensuales en sueldos")
+    */
+
+    /*
+    console.log("ej------------------6")
+
+    let num = 1
+    
+    for (let num = 1; num <= 1500 ; num++) {
+        if(num %10 == 0)
+        console.log(num)
+    }
+    */
+
+    /*
+    console.log("ej-------------------------7")
+
+    let suma = 0
+    let suma2 = 0
+
+
+    for (let i = 0; i<3; i++) {
+        let lista1 = parseInt(prompt("ingrese 3 valores"))
+        let lista2 = parseInt(prompt("ingrese nuevamente 3 valores"))
+        suma += lista1;
+        suma2 += lista2;
+        
+
+    }
+    if(suma>suma2){
+        console.log("Lista 1 mayor")
+    }else if(suma<suma2){
+        console.log("Lista 2 mayor")
+    } else {
+        console.log("Listas iguales")
+    }
+    */
+
+    /*
+    console.log("ej-----------------------8")
+
+    let par = 0
+    let imp = 0
+
+    for (let i= 0; i < 5; i++) {
+        let num = parseInt(prompt("ingrese numeros enteros"))
+        if(num %2 == 0){
+            par++
+        }else if(num %2 != 0){
+            imp++
+        }        
+    }
+    console.log(par+" valores ingresados eran numeros pares")
+    console.log(imp+" valores ingresados eran numeros impares")
+    */
+
+    console.log("ej-------------9")
+
+    let aMayorA12 = 0
+    
+    
+
+    for (let i = 0; i < 3;i++) {
+        let B1 = parseInt(prompt("Base en cm"))
+        let A1 = parseInt(prompt("Altura en cm"))
+        let areaR = 0
+        areaR = areaTriangulo(A1,B1)
+        console.log(B1+" cm de Base" , A1+" cm de Altura")
+        console.log(areaR+" cm2 de superficie")
+        if(areaR>12){
+            aMayorA12++
+        }
+    }
+    console.log(aMayorA12+" triangulo/s tienen una superficie mayor a 12cm")
+
+
+    //funciones
+
+    function areaTriangulo(base, altura) {
+        base = parseInt(base)
+        altura = parseInt(altura)
+        let area = 0
+        area = (base * altura ) /2 ;
+        return area
+
+    }
+
+
+
+
+    
+
+
+    
+
+  
+
+
+    
+    
+        
+    
+        
+    
+    
+
+
+
+
+    
+    
+        
+        
+    
+    
+
+    
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>

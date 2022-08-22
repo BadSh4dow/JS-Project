@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   console.log("ej-------------9")
+
+let aMayorA12 = 0
+
+
+
+for (let i = 0; i < 3;i++) {
+    let B1 = parseInt(prompt("Base en cm"))
+    let A1 = parseInt(prompt("Altura en cm"))
+    let areaR = 0
+    areaR = areaTriangulo(A1,B1)
+    console.log(B1+" cm de Base" , A1+" cm de Altura")
+    console.log(areaR+" cm2 de superficie")
+    if(areaR>12){
+        aMayorA12++
+    }
+}
+console.log(aMayorA12+" triangulo/s tienen una superficie mayor a 12cm")
+
+
+//funciones
+
+function areaTriangulo(base, altura) {
+    base = parseInt(base)
+    altura = parseInt(altura)
+    let area = 0
+    area = (base * altura ) /2 ;
+    return area
+
+}
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body {
+        display: grid;
+        grid-template-areas: 
+        'cont1 cont1 cont1 cont1'
+        'cont2 cont3 cont4 cont5'
+        'cont2 cont6 cont4 cont5'
+        'cont2 cont6 cont7 cont5'
+        'cont2 cont6 cont8 cont9';
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: left;
+        color: black;
+        grid-template-rows: 50% 1fr 1fr 1fr 1fr;
+        width: 100vw;
+        height: 100vh;
+        gap: 5px;
+        font-size: 25px;
+       } 
+       #cont1 {
+        grid-area: cont1;
+        background-color: yellow
+       }
+       #cont2 {
+        grid-area: cont2;
+        background-color: yellow
+       }
+       #cont3 {
+        grid-area: cont3;
+        background-color: yellow
+       }
+       #cont4 {
+        grid-area: cont4;
+        background-color: yellow
+       }
+       #cont5 {
+        grid-area: cont5;
+        background-color: yellow
+       }
+       #cont6 {
+        grid-area: cont6;
+        background-color: yellow
+       }
+       #cont7 {
+        grid-area: cont7;
+        background-color: yellow
+       }
+       #cont8 {
+        grid-area: cont8;
+        background-color: yellow
+       }
+       #cont9 {
+        grid-area: cont9;
+        background-color: yellow
+       }
+    </style>
+</head>
+
+
+<body>
+    <div id="cont1">cont1</div>
+    <div id="cont2">cont2</div>
+    <div id="cont3">cont3</div>
+    <div id="cont4">cont4</div>
+    <div id="cont5">cont5</div>
+    <div id="cont6">cont6</div>
+    <div id="cont7">cont7</div>
+    <div id="cont8">con8</div>
+    <div id="cont9">cont9</div>
+</body>
+
+</html>

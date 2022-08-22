@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body {
+        display: grid;
+        grid-template-areas: 
+        'header header header header header'
+        'white1 main main sidebar white2'
+        'white1 twin1 twin2 twin2 white2'
+        'footer footer footer footer footer';
+        grid-template-columns: 19.8114% 30.6601% 9.9057% 19.8114% 19.8114%;
+        grid-template-rows: 15% 45% 25% 15% ;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        gap: 5px;
+        font-family: sans-serif;
+        
+    }
+#header {
+    grid-area: header;
+    background-color: rgb(71, 144, 218);
+}
+#white1 {
+    grid-area: whitee;
+    background-color: white;
+}
+#main {
+    grid-area: main;
+    background-color: rgb(33, 164, 33);
+}
+#sidebar {
+    grid-area: sidebar;
+    background-color: rgb(139, 78, 139);
+}
+#twin1 {
+    grid-area: twin1;
+    background-color: orange;
+}
+#twin2 {
+    grid-area: twin2;
+    background-color: orange;
+}
+#white2 {
+    grid-area: whitee2;
+    background-color: white;
+}
+#footer {
+    grid-area: footer;
+    background-color: rgb(26, 71, 167);
+}
+
+
+</style>
+</head>
+
+
+<body>
+    <header id="header">header</header>
+    <div id="white1">whitee</div>
+    <main id="main">main</main>
+    <aside id="sidebar">sidebar</aside>
+    <div id="twin1"><p>twin1</p></div>
+    <div id="twin2"><p>twin2</p></div>
+    <div id="white2">whitee2</div>
+    <footer id="footer">footer</footer>
+ 
+</body>
+
+</html>
